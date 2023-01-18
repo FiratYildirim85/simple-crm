@@ -1,0 +1,48 @@
+<div class="big-container">
+    <div class="headline">
+        <h1>Simple CRM</h1>
+    </div>
+    <div class="img-container">
+        <img src="../../assets/crm.jpg" alt="">
+    </div>
+    <div class="container">
+        <mat-card>
+            <mat-progress-bar class="bar" mode="indeterminate" *ngIf="loading"></mat-progress-bar>
+            <div class="logo-container" style="margin-bottom: 16px;">
+                <img src="assets/img/Logo-Blue.png" alt="">
+            </div>
+            <mat-card-content>
+                <h2>Log In</h2>
+                <form #loginForm="ngForm" (ngSubmit)="loginUser()">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input matInput placeholder="Email" email name="userName" ngModel #userName="ngModel" required>
+                        <mat-error *ngIf="userName.invalid">Please enter a valid e-mail <address></address></mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <!-- <input matInput placeholder="Password" ##userPassword required> -->
+                        <input matInput [type]="hide ? 'password' : 'text'" name="userPassword" ngModel
+                            #userPassword="ngModel" required>
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                            [attr.aria-pressed]="hide">
+                            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                    </mat-form-field>
+                    <div class="button-container">
+                        <button mat-raised-button value="Log in" type="submit" [disabled]="loginForm.invalid">Log
+                            in</button>
+                       
+                        
+                    </div>
+                </form>
+                <div class="alternate">
+                    <span routerLink="/forgot-password">Forgot Password</span>
+                    
+                    <span class="redirect" routerLink="/signin"> Sign Up</span>
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+    </div>
+</div>
