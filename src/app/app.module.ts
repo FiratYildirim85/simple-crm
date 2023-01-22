@@ -35,6 +35,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { AuthService } from "./shared/services/auth.service";
 import { ErrorDialogComponent } from './error-dialog/error-dialog.component';
+import { ClockComponent } from './clock/clock.component';
 
 
 
@@ -51,7 +52,8 @@ import { ErrorDialogComponent } from './error-dialog/error-dialog.component';
     SignInComponent,
     ForgotPasswordComponent,
     VerifyEmailComponent,
-    ErrorDialogComponent
+    ErrorDialogComponent,
+    ClockComponent
   ],
   imports: [
     BrowserModule,
