@@ -1,7 +1,7 @@
 <mat-drawer-container class="mat-drawer-container" autosize>
   <mat-drawer #drawer class="sidenav" mode="side" [opened]="authService.isLoggedIn && true">
     <div class="logo-container">
-      <img class="logo-crm" src="../assets/img/logo-CRM.png" alt="">
+      <img class="logo-crm" src="./assets/img/logo-CRM.png" alt="">
     </div>
     <ul class="menu-items">
       <li routerLink="dashboard" (click)="headline('Dashboard')"><mat-icon>perm_identity</mat-icon>Dashboard</li>

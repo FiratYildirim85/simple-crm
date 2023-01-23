@@ -3,17 +3,17 @@
         <h1>Simple CRM</h1>
     </div>
     <div class="img-container">
-        <img src="../../assets/crm.jpg" alt="">
+        <img src="./assets/crm.jpg" alt="">
     </div>
     <div class="container">
         <mat-card>
             <mat-progress-bar class="bar" mode="indeterminate" *ngIf="loading"></mat-progress-bar>
-            <div class="logo-container" style="margin-bottom: 16px;">
+            <div class="logo-container">
                 <img src="assets/img/Logo-Blue.png" alt="">
             </div>
             <mat-card-content>
                 <h2>Log In</h2>
-                <form #loginForm="ngForm" (ngSubmit)="loginUser()">
+                <form class="innerLogin" #loginForm="ngForm" (ngSubmit)="loginUser()">
                     <mat-form-field appearance="outline">
                         <mat-label>Email</mat-label>
                         <input matInput placeholder="Email" email name="userName" ngModel #userName="ngModel" required>

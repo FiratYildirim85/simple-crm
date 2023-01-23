@@ -1,9 +1,9 @@
 <div class="container">
+    <div class="headline">
+        <h1>Simple CRM</h1>
+    </div>
     <mat-card>
         <mat-progress-bar class="bar" mode="indeterminate" *ngIf="loading"></mat-progress-bar>
-        <div class="logo-container" style="margin-bottom: 16px;">
-            <img src="assets/img/Logo-Blue.png" alt="">
-          </div>
         <mat-card-content>
             <h2>Sign Up</h2>
             <form #signupForm="ngForm" (ngSubmit)="signupUser()">
