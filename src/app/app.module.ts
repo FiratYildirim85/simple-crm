@@ -23,7 +23,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
-import {MatCardModule} from '@angular/material/card';
+import {MatCardContent, MatCardModule} from '@angular/material/card';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { DialogEditAddressComponent } from './dialog-edit-address/dialog-edit-address.component';
@@ -36,6 +36,8 @@ import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { AuthService } from "./shared/services/auth.service";
 import { ErrorDialogComponent } from './error-dialog/error-dialog.component';
 import { ClockComponent } from './clock/clock.component';
+import { CurrentDateComponent } from './current-date/current-date.component';
+
 
 
 
@@ -53,7 +55,9 @@ import { ClockComponent } from './clock/clock.component';
     ForgotPasswordComponent,
     VerifyEmailComponent,
     ErrorDialogComponent,
-    ClockComponent
+    DialogEditUserComponent,
+    ClockComponent,
+    CurrentDateComponent
   ],
   imports: [
     BrowserModule,

@@ -8,9 +8,7 @@
     <div class="container">
         <mat-card>
             <mat-progress-bar class="bar" mode="indeterminate" *ngIf="loading"></mat-progress-bar>
-            <div class="logo-container">
-                <img src="assets/img/Logo-Blue.png" alt="">
-            </div>
+            
             <mat-card-content>
                 <h2>Log In</h2>
                 <form class="innerLogin" #loginForm="ngForm" (ngSubmit)="loginUser()">
@@ -30,7 +28,7 @@
                         </button>
                     </mat-form-field>
                     <div class="button-container">
-                        <button mat-raised-button value="Log in" type="submit" [disabled]="loginForm.invalid">Log
+                        <button class="button-log-in" mat-raised-button value="Log in" type="submit" [disabled]="loginForm.invalid">Log
                             in</button>
                        
                         

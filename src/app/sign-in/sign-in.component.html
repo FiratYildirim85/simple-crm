@@ -1,7 +1,9 @@
-<div class="container">
+<div class="big-container">
+
     <div class="headline">
         <h1>Simple CRM</h1>
     </div>
+    <div class="container">
     <mat-card>
         <mat-progress-bar class="bar" mode="indeterminate" *ngIf="loading"></mat-progress-bar>
         <mat-card-content>
@@ -21,7 +23,7 @@
                     <mat-error *ngIf="userPwd.invalid">Please use at least 6 characters<address></address></mat-error>
                 </mat-form-field>
                 <div class="button-container">
-                    <button mat-raised-button value="Sign Up" type="submit" [disabled]="signupForm.invalid"
+                    <button class="button-sign-in" mat-raised-button value="Sign Up" type="submit" [disabled]="signupForm.invalid"
                     >Register</button>
                 </div>
             </form>
@@ -31,4 +33,5 @@
         </mat-card-content>
     </mat-card>
 
+</div>
 </div>
